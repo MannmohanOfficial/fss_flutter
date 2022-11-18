@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/home/jarviz/Documents/personal/user_list/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-fi/values-fi.xml",
+            "outputFile": "/home/jarviz/Documents/personal/fss_flutter/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-fi/values-fi.xml",
             "map": [
                 {
                     "source": "/home/jarviz/.gradle/caches/transforms-3/acbce933e4b464a5224ed377a62db1f5/transformed/core-1.6.0/res/values-fi/values-fi.xml",

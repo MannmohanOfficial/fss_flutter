@@ -13,8 +13,8 @@
 13         to allow setting breakpoints, to provide hot reload, etc.
 14    -->
 15    <uses-permission android:name="android.permission.INTERNET" />
-15-->/home/jarviz/Documents/personal/user_list/android/app/src/debug/AndroidManifest.xml:7:5-66
-15-->/home/jarviz/Documents/personal/user_list/android/app/src/debug/AndroidManifest.xml:7:22-64
+15-->/home/jarviz/Documents/personal/fss_flutter/android/app/src/main/AndroidManifest.xml:2:3-65
+15-->/home/jarviz/Documents/personal/fss_flutter/android/app/src/main/AndroidManifest.xml:2:20-62
 16
 17    <application
 18        android:name="android.app.Application"
@@ -33,7 +33,7 @@
 30            android:windowSoftInputMode="adjustResize" >
 31
 32            <!--
-33                 Specifies an Android theme to apply to this Activity as soon as
+33           Specifies an Android theme to apply to this Activity as soon as
 34                 the Android process has started. This theme is visible to the user
 35                 while the Flutter UI initializes. After that, this theme continues
 36                 to determine the Window background behind the Flutter UI.
@@ -49,7 +49,7 @@
 46            </intent-filter>
 47        </activity>
 48        <!--
-49             Don't delete the meta-data below.
+49         Don't delete the meta-data below.
 50             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
 51        -->
 52        <meta-data

@@ -1,4 +1,3 @@
-// ignore_for_file: public_member_api_docs, sort_constructors_first
 import 'dart:convert';
 
 import 'package:flutter/material.dart';
@@ -37,6 +36,19 @@ class _ListScreenState extends State<ListScreen> {
     }
   }
 
+  search(String val) {
+    final fnd = users.where((element) {
+      final name = element['name'].toString().toLowerCase();
+      final input = val.toLowerCase();
+      return name.contains(input);
+    }).toList();
+    // print(found);
+
+    setState(() {
+      users = fnd;
+    });
+  }
+
   @override
   void initState() {
     // TODO: implement initState
@@ -58,13 +70,9 @@ class _ListScreenState extends State<ListScreen> {
           ),
           child: TextField(
             controller: _textEditingController,
-            // onChanged: (value) {
-            //   setState(() {
-            //     users = users
-            //         .where((element) => element.contains(value))
-            //         .toList();
-            //   });
-            // },
+            onChanged: (value) {
+              search(value);
+            },
             decoration: InputDecoration(
               border: InputBorder.none,
               hintText: 'Search...',
@@ -82,6 +90,7 @@ class _ListScreenState extends State<ListScreen> {
           InkWell(
             onTap: () => setState(() {
               _textEditingController!.clear();
+              getAllUser();
             }),
             child: Container(
               padding: EdgeInsets.all(8),
@@ -116,16 +125,12 @@ class _ListScreenState extends State<ListScreen> {
               children: [
                 Card(
                   child: CircleAvatar(
-                    maxRadius: 30,
-                    backgroundImage: users[index]['profile_pic'] != null
-                        ? users[index]['profile_pic'] ==
-                                "http://ec2-3-143-158-60.us-east-2.compute.amazonaws.com/api/uploads/profile/cropped3452602049061846613.jpg"
-                            ? NetworkImage(
-                                "https://cdn.pixabay.com/photo/2019/08/11/18/59/icon-4399701_1280.png")
-                            : NetworkImage(users[index]['profile_pic'])
-                        : NetworkImage(
-                            "https://cdn.pixabay.com/photo/2019/08/11/18/59/icon-4399701_1280.png"),
-                  ),
+                      maxRadius: 30,
+                      backgroundImage: users[index]['profile_pic'] ==
+                              "http://ec2-3-143-158-60.us-east-2.compute.amazonaws.com/api/uploads/profile/cropped3452602049061846613.jpg"
+                          ? NetworkImage(
+                              "https://cdn.pixabay.com/photo/2019/08/11/18/59/icon-4399701_1280.png")
+                          : NetworkImage(users[index]['profile_pic'])),
                 ),
                 SizedBox(width: 10),
                 Column(

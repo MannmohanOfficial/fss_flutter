@@ -1,0 +1,4 @@
+#Thu Nov 17 11:30:51 IST 2022
+base.0=/home/jarviz/Documents/personal/fss_flutter/build/app/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+renamed.0=classes.dex
+path.0=classes.dex

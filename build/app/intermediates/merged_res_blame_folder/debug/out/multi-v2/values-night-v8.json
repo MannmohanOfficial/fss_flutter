@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/home/jarviz/Documents/personal/user_list/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-night-v8/values-night-v8.xml",
+            "outputFile": "/home/jarviz/Documents/personal/fss_flutter/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-night-v8/values-night-v8.xml",
             "map": [
                 {
-                    "source": "/home/jarviz/Documents/personal/user_list/android/app/src/main/res/values-night/styles.xml",
+                    "source": "/home/jarviz/Documents/personal/fss_flutter/android/app/src/main/res/values-night/styles.xml",
                     "from": {
                         "startLines": "3,14",
                         "startColumns": "4,4",
